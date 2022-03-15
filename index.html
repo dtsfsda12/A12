@@ -30,57 +30,86 @@
   <body>
     <!-- Header -->
     <div class="header">
-      <div class="container-header">
-        <img src="image/logo-navbar.png" alt="logo" />
-      </div>
-      <div class="header-list">
-        <ul>
-          <li>Home</li>
-          <li>Profile</li>
-          <li>News</li>
-          <li>Recommendation</li>
-          <li>
-            <div class="dropdown">
-              <div class="mainmenubtn">Travel Guide</div>
-              <div class="dropdown-child">
-                <a href="#">Travel Rules</a>
-                <a href="#">Travel Tips</a>
-                <a href="#">Weather</a>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="dropdown">
-              <div class="mainmenubtn">Virtual Tour</div>
-              <div class="dropdown-child">
-                <a href="#">Borobudu Temple</a>
-                <a href="#">Keraton Yogyakarta</a>
-                <a href="#">Prambanan Temple</a>
-                <a href="#">Mount Bromo</a>
-                <a href="#">Lawang Sewu</a>
-                <a href="#">Toba Lake</a>
-              </div>
-            </div>
-          </li>
-        </ul>
-      </div>
-      <div class="cari">
-        <form class="form-header">
-          <input
-            class="search"
-            type="text"
-            placeholder="enter text here..."
-            required
-          />
-          <button class="button" type="button">
-            <i class="fas fa-search"></i>
-          </button>
-        </form>
+      <div class="topnav" id="myTopnav">
+        <div class="container-header">
+          <img src="image/logo-navbar.png" alt="logo" />
+        </div>
+        <a href="#content-header">Home</a>
+        <a href="#content-about">About Us</a>
+        <a href="#">News</a>
+        <a href="#content-destination">Destination</a>
+        <a href="#content-recommendation">Recommendation</a>
+        <a href="#content-gallery">Gallery</a>
+        <a href="#content-message">Contact</a>
+        <div class="dropdown">
+          <div class="mainmenubtn">Travel Guide</div>
+          <div class="dropdown-child">
+            <a href="#">Travel Rules</a>
+            <a href="#">Travel Tips</a>
+            <a href="#">Weather</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <div class="mainmenubtn">Virtual Tour</div>
+          <div class="dropdown-child">
+            <a href="#content-tour">Borobudu Temple</a>
+            <a href="#">Keraton Yogyakarta</a>
+            <a href="#">Prambanan Temple</a>
+            <a href="#">Mount Bromo</a>
+            <a href="#">Lawang Sewu</a>
+            <a href="#">Toba Lake</a>
+          </div>
+        </div>
+        <div class="cari">
+          <form class="form-header">
+            <input
+              class="search"
+              type="text"
+              placeholder="enter text here..."
+              required
+            />
+            <button class="button" type="button">
+              <i class="fas fa-search"></i>
+            </button>
+          </form>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
       </div>
     </div>
 
     <!-- Content -->
     <div class="content">
+      <!-- Content About Us -->
+      <div class="content-about" id="content-about">
+        <div
+          class="container container-750"
+          data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"
+        >
+          <div class="row-about">
+            <div class="col-25">
+              <h1 class="accent-undefined">It's Travel-<br />holic</h1>
+            </div>
+            <div class="col-25">
+              <p class="katamari-field">
+                Travelholic is a sercive to help customers visit more places in
+                Indonesia easier. We serve you many destination that can give
+                you an experience to live in paradise island.
+              </p>
+              <br />
+              <p class="katamari-field">
+                We brings you an exciting journey by our travel. We will provide
+                everything on your journey. Our facilities make your day be
+                amazing.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <!-- Content Header -->
       <div
         class="content-header"
@@ -145,35 +174,7 @@
             </h3>
           </div>
         </div>
-        <a href="#content-about"><div class="scroll-down"></div></a>
-      </div>
-
-      <!-- Content About Us -->
-      <div class="content-about" id="content-about">
-        <div
-          class="container container-750"
-          data-aos="fade-right"
-          data-aos-offset="300"
-          data-aos-easing="ease-in-sine"
-        >
-          <div class="row-about">
-            <div class="col col-6 text-col">
-              <h1 class="accent-undefined" data-katamari-field-id="1">
-                It's Travelholic
-              </h1>
-            </div>
-            <div class="col col-5 col-push-1 text-col">
-              <p class="katamari-field" data-katamari-field-id="2">
-                Travelholic is a sercive to help customers visit more places in
-                Indonesia easier.
-              </p>
-              <p class="katamari-field" data-katamari-field-id="3">
-                We brings you an exciting journey by our travel. Our facilities
-                make your day be amazing.
-              </p>
-            </div>
-          </div>
-        </div>
+        <a href="#content-destination"><div class="scroll-down"></div></a>
       </div>
 
       <!-- Content Favorite Destination -->
@@ -721,19 +722,21 @@
           <div class="footer-heading footer-1">
             <h2>About Us</h2>
             <div class="footer-item">
-              <a href="#">Profile</a>
-              <a href="#">Newsletters</a>
-              <a href="#">Event</a>
-              <a href="#">Desa Wisata</a>
-              <a href="#">Term of Service</a>
+              <a href="#content-header">Home</a>
+              <a href="#content-about">About Us</a>
+              <a href="#">News</a>
+              <a href="#content-destination">Destination</a>
+              <a href="#content-recommendation">Recommendation</a>
+              <a href="#content-gallery">Gallery</a>
+              <a href="#content-tour">Virtual Tour</a>
             </div>
           </div>
           <div class="footer-heading footer-2">
             <h2>Contact Us</h2>
             <div class="footer-item">
-              <a href="#">Tour Guide</a>
+              <a href="#">Travel Guide</a>
               <a href="#">Support</a>
-              <a href="#">Contact</a>
+              <a href="#content-message">Contact</a>
               <a href="#">Sponsorship</a>
             </div>
           </div>
@@ -778,6 +781,16 @@
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
     <script>
       AOS.init();
     </script>
